@@ -30,9 +30,9 @@
       }
     </style>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope p-5 pb-0 sm:p-0">
     <header class="container lg:max-w-6xl mx-auto">
-      <nav>
+      <nav class="md:py-10 py-8">
         <div class="navbar">
           <div class="navbar-start">
             <div class="">
@@ -75,7 +75,9 @@
                 />
               </svg>
             </div>
-            <a class="pl-1 btn-ghost font-extrabold text-3xl">Rinterio</a>
+            <button>
+              <a class="pl-1 btn-ghost font-extrabold text-3xl">Rinterio</a>
+            </button>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-slate-700">
@@ -92,8 +94,10 @@
                 tabindex="0"
                 title="logo"
                 role="button"
-                class="btn btn-ghost lg:hidden"
+                class="btn btn-ghost p-0 lg:hidden"
               >
+                <!-- svg imported from figma -->
+
                 <svg
                   width="48.015991"
                   height="48.016113"
@@ -102,7 +106,6 @@
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
-                  <desc>Created with Pixso.</desc>
                   <defs>
                     <clipPath id="clip1_4004">
                       <rect
@@ -171,7 +174,7 @@
 
             <div class="hidden sm:block">
               <div class="flex space-x-4">
-                <div class="">
+                <button type="button" title="search" class="">
                   <!-- svg imported from figma -->
                   <svg
                     width="48.015991"
@@ -220,8 +223,8 @@
                       stroke-width="1.000000"
                     />
                   </svg>
-                </div>
-                <div class="">
+                </button>
+                <button type="button" title="cart" class="">
                   <!-- svg imported from figma -->
                   <svg
                     width="48.015961"
@@ -292,7 +295,7 @@
                       stroke-width="1.000000"
                     />
                   </svg>
-                </div>
+                </button>
                 <button
                   class="btn rounded-full bg-[#ABEF5F] px-5 text-black font-bold"
                 >
@@ -342,18 +345,64 @@
         </div>
       </nav>
       <!-- hero section -->
-      <section class="">
+      <section class="nd:pb-24 pb-10">
         <div class="hero">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="hero-content text-neutral-content text-center">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-              <p class="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+          <div class="bg-none"></div>
+          <div class="hero-content p-0 text-neutral-content text-center">
+            <div class="max-w-full">
+              <img class="mx-auto" src="assets/banner.png" alt="Building " />
+              <h1 class="font-extrabold md:text-6xl text-3xl text-black my-6">
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="mb-5 md:text-sm font-medium text-[#494949]">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
               </p>
-              <button class="btn btn-primary">Get Started</button>
+              <button
+                class="btn border-[#ABEF5F] rounded-full bg-[#acef5f84] px-5 text-black font-bold"
+              >
+                <span class="font-bold text-xl">View Details</span>
+
+                <!-- svg imported from figma -->
+                <svg
+                  width="32.010635"
+                  height="32.010742"
+                  viewBox="0 0 32.0106 32.0107"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs />
+                  <rect
+                    id="arrow-up-right-01"
+                    rx="15.499997"
+                    width="30.999994"
+                    height="31.000031"
+                    transform="translate(0.510635 0.500000) rotate(0.019056)"
+                    fill="#1C1C1C"
+                    fill-opacity="1.000000"
+                  />
+                  <path
+                    id="Vector"
+                    d="M21 11L10 22"
+                    stroke="#FFFFFF"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    id="Vector"
+                    d="M15 10.13C15 10.13 20.64 9.66 21.49 10.51C22.35 11.37 21.87 17 21.87 17"
+                    stroke="#FFFFFF"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
